@@ -5,6 +5,7 @@ const _ = {
         array[i] = callback(array[i]);
         }
     },
+
     reduce: function(array, callback, memo){
         let el = 0;
         if (!memo){
@@ -24,6 +25,7 @@ const _ = {
             }
         }
     },
+
     filter: function(array, callback) {
         const tempArray = [];
         for (let i = 0; i < array.length; i++) {
@@ -33,6 +35,7 @@ const _ = {
         }
         return tempArray;
     },
+    
     reject: function(array, callback) {
         const tempArray = [];
         for (let i = 0; i < array.length; i++) {
